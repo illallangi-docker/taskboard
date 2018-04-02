@@ -13,6 +13,7 @@ RUN git clone https://github.com/kiswa/TaskBoard $PROJECT
 WORKDIR $PROJECT
 
 RUN ./build/composer.phar install
+RUN ./build/composer.phar self-update
 RUN ./build/build-all
 
 RUN chmod -R +w $PROJECT/api/
