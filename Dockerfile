@@ -3,7 +3,7 @@ MAINTAINER "VAILLANT Jérémy" <vaillant.jeremy@dev-crea.com>
 
 ENV PROJECT /var/www/html
 
-RUN apt-get update && apt-get install -y sqlite php5-sqlite git openjdk-8-jre
+RUN apt-get update && apt-get install -y sqlite php5-sqlite git openjdk-7-jre curl
 
 RUN a2enmod rewrite
 RUN a2enmod expires
